@@ -1,0 +1,21 @@
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; /* Center aligns both inputs and button */
+}
+
+.inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.add-button {
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
