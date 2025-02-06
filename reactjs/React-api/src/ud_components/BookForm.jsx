@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 function BookForm({HandleSubmit,title,setTitle,setAuthor,author,editMode}) {
     return (
         <>
-            <form onSubmit={HandleSubmit}>
+            <form onSubmit={HandleSubmit} className="form-container">
                 <div className='input-container'>
                 <div className='inputs'>
                     <Input
@@ -13,6 +13,7 @@ function BookForm({HandleSubmit,title,setTitle,setAuthor,author,editMode}) {
                     placeholder="Enter Book Title"
                     value={title}
                     required
+                    className="input-field"
                     />
                     <Input
                     type="text"
@@ -20,6 +21,7 @@ function BookForm({HandleSubmit,title,setTitle,setAuthor,author,editMode}) {
                     placeholder="Enter Book Author"
                     value={author}
                     required
+                    className="input-field"
                     />
                 </div>
                 <Button type="submit" className="add-button">{editMode ? 'Update' : 'Add'}</Button>

@@ -1,9 +1,9 @@
 
 .input-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
-    align-items: center; /* Center aligns both inputs and button */
+    justify-items: center;
 }
 
 .inputs {
@@ -13,9 +13,13 @@
 
 .add-button {
     padding: 8px 15px;
-    background-color: blue;
+    background-color: rgb(218, 218, 218);
     color: white;
     border: none;
     border-radius: 50px;
     cursor: pointer;
+}
+
+form{
+    display:contents;
 }
